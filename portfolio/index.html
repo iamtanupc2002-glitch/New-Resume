@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinematic Portfolio</title>
+    <meta
+      name="description"
+      content="Animated personal portfolio built with HTML, CSS, and JavaScript."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="fx-canvas" aria-hidden="true"></canvas>
+    <div class="noise"></div>
+    <div class="cursor-glow"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home">Iam_<span>Tanu</span></a>
+        <nav class="desktop-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="glass-btn small" id="themeToggle" type="button">Theme</button>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="sun-glow"></div>
+
+        <div class="birds" aria-hidden="true">
+          <svg class="bird bird-1" viewBox="0 0 120 60">
+            <path d="M5 35 C25 5, 45 5, 60 30 C75 5, 95 5, 115 35" />
+          </svg>
+          <svg class="bird bird-2" viewBox="0 0 120 60">
+            <path d="M5 35 C25 5, 45 5, 60 30 C75 5, 95 5, 115 35" />
+          </svg>
+          <svg class="bird bird-3" viewBox="0 0 120 60">
+            <path d="M5 35 C25 5, 45 5, 60 30 C75 5, 95 5, 115 35" />
+          </svg>
+          <svg class="bird bird-4" viewBox="0 0 120 60">
+            <path d="M5 35 C25 5, 45 5, 60 30 C75 5, 95 5, 115 35" />
+          </svg>
+        </div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Creative Frontend Developer</p>
+            <h1>
+              Building fast, premium, animated
+              <span>web experiences</span>
+            </h1>
+            <p class="hero-text">
+              I design and build polished websites with strong UI, smooth motion,
+              responsive layouts, and memorable user interactions.
+            </p>
+            <div class="hero-actions">
+              <a class="glass-btn" href="#projects">See My Work</a>
+              <a class="outline-btn" href="#contact">Hire Me</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>15+</strong>
+                <span>Projects</span>
+              </div>
+              <div>
+                <strong>99%</strong>
+                <span>Responsive</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Creative Energy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal delay-1">
+            <div class="orb orb-a"></div>
+            <div class="orb orb-b"></div>
+            <div class="profile-card tilt-card">
+              <div class="profile-topline">
+                <span class="status-dot"></span>
+                Available for freelance
+              </div>
+              <div class="avatar-ring">
+                <div class="avatar-core">TANU</div>
+              </div>
+              <h2>Thapotharan Ranujan</h2>
+              <p>Frontend / Full Stack Developer</p>
+              <div class="mini-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Next.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container two-col">
+          <div class="section-copy reveal">
+            <p class="section-label">About Me</p>
+            <h2>I create interfaces that feel alive.</h2>
+            <p>
+              This portfolio is built as a cinematic static site using only HTML,
+              CSS, and JavaScript. It includes flying birds, ambient particles,
+              cursor sparks, glassmorphism cards, reveal animations, and smooth
+              transitions.
+            </p>
+            <p>
+              You can replace every section with your real content and use this
+              as a premium developer portfolio template.
+            </p>
+          </div>
+          <div class="about-panel tilt-card reveal delay-1">
+            <div class="panel-row"><span>Role</span><strong>Full Stack Developer</strong></div>
+            <div class="panel-row"><span>Speciality</span><strong>React / Expo / UI</strong></div>
+            <div class="panel-row"><span>Focus</span><strong>Interactive Experiences</strong></div>
+            <div class="panel-row"><span>Style</span><strong>Modern + Premium Motion</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="container">
+          <div class="heading reveal">
+            <p class="section-label">Skills</p>
+            <h2>Stack that powers the experience</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card tilt-card reveal">
+              <h3>Frontend</h3>
+              <p>HTML5, CSS3, JavaScript, React, Next.js, responsive design, animation systems.</p>
+            </article>
+            <article class="skill-card tilt-card reveal delay-1">
+              <h3>Mobile</h3>
+              <p>React Native, Expo, reusable UI components, smooth app experiences.</p>
+            </article>
+            <article class="skill-card tilt-card reveal delay-2">
+              <h3>Backend</h3>
+              <p>Supabase, PHP, MySQL, APIs, auth, data-driven products.</p>
+            </article>
+            <article class="skill-card tilt-card reveal delay-3">
+              <h3>Tools</h3>
+              <p>Git, GitHub, UI systems, clean architecture, performance optimization.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="container">
+          <div class="heading reveal">
+            <p class="section-label">Featured Projects</p>
+            <h2>Work presented with motion and depth</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card tilt-card reveal">
+              <div class="project-shine"></div>
+              <span class="badge">Portfolio</span>
+              <h3>Animated Developer Portfolio</h3>
+              <p>Luxury static portfolio with birds, sparks, reveal transitions, glow effects, and cursor interactions.</p>
+              <div class="card-links">
+                <a href="#contact">Use This Design</a>
+              </div>
+            </article>
+            <article class="project-card tilt-card reveal delay-1">
+              <div class="project-shine"></div>
+              <span class="badge">Web App</span>
+              <h3>Realtime Chat & Call UI</h3>
+              <p>Friend-making app concept with chat, audio, video calls, profile flows, and social interactions.</p>
+              <div class="card-links">
+                <a href="#contact">View Concept</a>
+              </div>
+            </article>
+            <article class="project-card tilt-card reveal delay-2">
+              <div class="project-shine"></div>
+              <span class="badge">Dashboard</span>
+              <h3>Learning Platform Interface</h3>
+              <p>Modern dashboard patterns with curriculum views, assessments, localization, and sleek admin UX.</p>
+              <div class="card-links">
+                <a href="#contact">Discuss Project</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-box reveal">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2>Let’s build something unforgettable.</h2>
+            <p>
+              Replace this with your email, WhatsApp, GitHub, LinkedIn, and project links.
+            </p>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="email" id="email" placeholder="Email address" required />
+            <textarea id="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            <button class="glass-btn" type="submit">Send Message</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 Thapothran Tanujan. Crafted with HTML, CSS and JavaScript.</p>
+        <a href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
